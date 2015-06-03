@@ -1,0 +1,15 @@
+AuraUAS Beaglebone Cape License Terms
+=====================================
+
+This design may be downloaded, copied, modified, and fabricated.
+
+Attribution of the original design must always be preserved:
+
+    Curtis L. Olson
+    curtolson@flightgear.org
+
+If any modifications or changes are made to the design by a 3rd party
+(no matter how small or seemingly insignificant) this is considered a
+derivative work.  Derivitive works are allowed, but they must maintain
+clear attribution as described above and be distributed under a
+different unique name that doesn't include "Aura" as part of the name.
