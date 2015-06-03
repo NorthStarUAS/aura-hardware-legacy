@@ -5,7 +5,7 @@ with a beaglebone linux computer.
 
 Primary design goals:
 
-- Maximizing use of existing mature and inexpensive hardware.
+- Maximize use of existing mature and inexpensive hardware.
 - Minimize amount of custom electronic circuits, soldering, and cabling.
 - Easy assembly/fabrication from kit (mostly 0.1" header soldering.)
 - Minimize wiring rats nest by pushing as many connections as possible onto
