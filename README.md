@@ -5,8 +5,8 @@ with a beaglebone linux computer.
 
 Primary design goals:
 
-- Maximizing existing (and inexpensive) well tested hardware.
-- Minimize amount of custom electronic circuits.
+- Maximizing use of existing mature and inexpensive hardware.
+- Minimize amount of custom electronic circuits, soldering, and cabling.
 - Easy assembly/fabrication from kit (mostly 0.1" header soldering.)
 - Minimize wiring rats nest by pushing as many connections as possible onto
   the cape.
@@ -14,8 +14,8 @@ Primary design goals:
 Features:
 
 - Physical lay out plugs into a beaglebone as a standard cape.
-- Mounting holes support a full size Ardupilot (Atmega2560) based
-  board or one of the 3rd party "mini" variants.
+- Mounting holes support a full size Ardupilot Mega 2 (Atmega2560) or
+  one of the 3rd party "mini" variants.
 - Stacking layout design.  It is even possible to stack the gps on top
   of the mini-apm for an even more compact integration.
 - Connects the Beaglebone to the APM2 via a UART and provides TTL
