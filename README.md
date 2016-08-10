@@ -1,20 +1,23 @@
 # aura-cape
 
 This is a Beaglebone cape designed to interface an ardupilot mega
-(APM2) with a beaglebone linux computer.  It has been designed out of
-10+ years of active UAS flight control hardware, software, and flight
-test experience.  There is a fair bit of thought, experience,
+(APM2) with a beaglebone linux computer.  It has been developed based
+on 10+ years of active UAS flight control hardware, software, and
+flight test experience.  There is a fair bit of thought, experience,
 different ideas tried, and lessons learned the hard way that have gone
-into the design choices and development of this system.
+into the design choices, development, and tuning of this system.
 
 
 Primary design goals:
 
-- Maximize use of existing mature and inexpensive hardware.
+- Maximize use of existing mature, inexpensive, and widely available
+  sub-components.
 - Minimize amount of custom electronic circuits, soldering, and cabling.
 - Easy assembly/fabrication from kit (mostly 0.1" header soldering.)
 - Minimize external wiring rats nest by pushing as many connections as
   possible onto the cape.
+- High performance, high reliability, production quality flight
+  results.
 
 Features:
 
