@@ -19,7 +19,7 @@ Features:
 
 Power:
 
-- Provides clean regulatored 5v power for the beaglebone and apm2 (via
+- Provides clean regulated 5v power for the beaglebone and apm2 (via
   the impressive Pololu D24V22F5.)
 - Exposes a 3.3v power reference (from beaglebone bus).
 - Exposes the 5v avionics power bus via an RC style connector for
