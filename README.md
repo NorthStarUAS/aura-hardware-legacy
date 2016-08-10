@@ -1,7 +1,7 @@
 # aura-cape
 
-This is a Beaglebone cape designed to interface an ardupilot mega/mini
-with a beaglebone linux computer.
+This is a Beaglebone cape designed to interface an ardupilot mega
+(APM2) with a beaglebone linux computer.
 
 Primary design goals:
 
@@ -14,20 +14,27 @@ Primary design goals:
 Features:
 
 - Physical lay out plugs into a beaglebone as a standard cape.
-- Mounting holes support a full size Ardupilot Mega 2 (Atmega2560) or
-  one of the 3rd party "mini" variants.
-- Stacking layout design.  It is even possible to stack the gps on top
-  of the mini-apm for an even more compact integration.
-- Connects the Beaglebone to the APM2 via a UART and provides TTL
-  level translation.
-- Provides power connections for beaglebone and apm2 (and servos) for
-  single source 5v power.
-- Exposes a 3.3v power reference for future expansion.
-- Exposes the 5v power bus for future expansion.
-- Exposes one beaglebone UART with DF13-6 connector for standard 3DR
-  radio modem connection to the beaglebone.
-- Exposes an extra beaglebone UART via a standard DF13 connector for
+- Mounting holes support a full size Ardupilot Mega 2 Atmega2560.
+- Stacking layout design.
+
+Power:
+
+- Provides clean regulatored 5v power for the beaglebone and apm2 (via
+  the impressive Pololu D24V22F5.)
+- Exposes a 3.3v power reference (from beaglebone bus).
+- Exposes the 5v avionics power bus via an RC style connector for
   future expansion.
+- Optional support for an onboard 5V/5A Pololu D24V50F5 to power the
+  servo bus.
+
+Communication:
+
+- Connects the Beaglebone to the APM2 via a UART with 3.3v <=> 5v TTL
+  level translation.
+- Supports a variety of 5v (3.3v TTL) radio modems such as Freescale,
+  3DR, and Digi Xtend.
+- Exposes the beaglebone UART4 and UART5 with DF13-5 connectors (or
+  Micro-JST) to support additional components such as an external gps.
 
 This cape is designed using Express PCB, a simple, easy to learn
 electronics design program.  It is also the name of the company that
