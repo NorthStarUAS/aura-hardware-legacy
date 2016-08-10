@@ -36,8 +36,18 @@ Communication:
 - Exposes the beaglebone UART4 and UART5 with DF13-5 connectors (or
   Micro-JST) to support additional components such as an external gps.
 
-This cape is designed using Express PCB, a simple, easy to learn
-electronics design program.  It is also the name of the company that
-can fabricate the boards you design in this software:
+Cost:
+
+- This cape is not currently available for sale as an assembled unit,
+  but you can download the design, have it made, and populate the
+  board yourself with only minimal soldering skills.  In quantities of
+  3, I estimate it will cost about $60/ea to fabricate and assemble a
+  full board.
+
+The Aura Cape is designed using Express PCB, a simple, easy to learn
+printed circuit board design program.  It is also the name of the
+company that will fabricate the boards you design with their software.
+This is not the lowest cost board fabricator but the software is
+simple enough for me to learn and understand:
 
 http://www.expresspcb.com
