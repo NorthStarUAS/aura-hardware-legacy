@@ -1,21 +1,28 @@
 # aura-cape
 
 This is a Beaglebone cape designed to interface an ardupilot mega
-(APM2) with a beaglebone linux computer.
+(APM2) with a beaglebone linux computer.  It has been designed out of
+10+ years of active UAS flight control hardware, software, and flight
+test experience.  There is a fair bit of thought, experience,
+different ideas tried, and lessons learned the hard way that have gone
+into the design choices and development of this system.
+
 
 Primary design goals:
 
 - Maximize use of existing mature and inexpensive hardware.
 - Minimize amount of custom electronic circuits, soldering, and cabling.
 - Easy assembly/fabrication from kit (mostly 0.1" header soldering.)
-- Minimize wiring rats nest by pushing as many connections as possible onto
-  the cape.
+- Minimize external wiring rats nest by pushing as many connections as
+  possible onto the cape.
 
 Features:
 
 - Physical lay out plugs into a beaglebone as a standard cape.
 - Mounting holes support a full size Ardupilot Mega 2 Atmega2560.
 - Stacking layout design.
+- Dual power regulation option for separate avionics and servo power
+  buses.
 
 Power:
 
@@ -46,7 +53,7 @@ Cost:
 
 The Aura Cape is designed using Express PCB, a simple, easy to learn
 printed circuit board design program.  It is also the name of the
-company that will fabricate the boards you design with their software.
+company that will fabricate the boards designed with their software.
 This is not the lowest cost board fabricator but the software is
 simple enough for me to learn and understand:
 
