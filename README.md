@@ -1,11 +1,17 @@
 # aura-cape
 
-This is a Beaglebone cape designed to interface an ardupilot mega
-(APM2) with a beaglebone linux computer.  It has been developed based
-on 10+ years of active UAS flight control hardware, software, and
-flight test experience.  There is a fair bit of thought, experience,
-different ideas tried, and lessons learned the hard way that have gone
-into the design choices, development, and tuning of this system.
+This is a Beaglebone cape (now with two or more variants) designed to
+interface inexpensive sensors and PWM outputs to a beaglebone linux
+computer.  The system depends on a 'little' processor to handle all
+the hard real time sensor I/O tasks.  The 'little' processor
+communicates with a 'big' processor (i.e. the beaglebone) via a
+standard uart.
+
+This system has been developed based on experience with UAS flight
+control hardware, software, and flight test experience starting around
+2005.  There is a fair bit of thought, experience, different ideas
+tried, and lessons learned the hard way that have gone into the design
+choices, development, and tuning of this system.
 
 
 Primary design goals:
@@ -21,11 +27,25 @@ Primary design goals:
 
 Features:
 
-- Physical lay out plugs into a beaglebone as a standard cape.
-- Mounting holes support a full size Ardupilot Mega 2 Atmega2560.
-- Stacking layout design.
-- Dual power regulation option for separate avionics and servo power
-  buses.
+- Standard cape design plugs right into a beaglebone and provides power
+  and connectivity to the beaglebone.
+
+- All versions:
+  - SBUS RC Inputs
+  - 8 PWM Outputs
+  - Two beaglebone UARTS exposed
+  - On board 5v 2.5A power regulator
+
+- APM2 version:
+  - Mounting holes to support a full size Ardupilot Mega 2 Atmega2560.
+  - Stacking layout design.
+  - Dual power regulation option for separate avionics and servo power
+    buses.
+  - Optional PWM RC Inputs
+
+- Teensy version:
+  - No extra board (no APM2 needed) to piggy back on the cape.
+  - MPU-9250 IMU, BMP280 pressure sensor onboard.
 
 Power:
 
