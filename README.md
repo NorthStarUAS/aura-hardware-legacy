@@ -1,11 +1,15 @@
-# aura-cape
+# aura-hardware
 
-This is a Beaglebone cape (now with two or more variants) designed to
-interface inexpensive sensors and PWM outputs to a beaglebone linux
-computer.  The system depends on a 'little' processor to handle all
-the hard real time sensor I/O tasks.  The 'little' processor
-communicates with a 'big' processor (i.e. the beaglebone) via a
-standard uart.
+This is a repository of hardware designs that have evolved out of the
+AuraUAS project.
+
+Beaglebone cape (now with two or more variants) designed to interface
+inexpensive sensors and PWM outputs to a beaglebone linux computer.
+The basic architecture of the system employs a 'little' processor and
+a 'big' processor working together as a distributed system.  The
+little processor handles all the hard real time sensor I/O tasks.  The
+big processor does all the heavy lifting, ekf, control, navigation,
+logging, communication, and higher level logic and functions.
 
 This system has been developed based on experience with UAS flight
 control hardware, software, and flight test experience starting around
@@ -13,6 +17,12 @@ control hardware, software, and flight test experience starting around
 tried, and lessons learned the hard way that have gone into the design
 choices, development, and tuning of this system.
 
+The existing system is designed as a beaglebone cape which interfaces
+to an APM2 (atmega2560 processor).  I am also developing a new design
+which compbines a teensy-3.2 and pocketbeagle on a single board.
+
+The following information needs to be reviewed and updated, but is
+still mostly reliable.
 
 Primary design goals:
 
