@@ -1,0 +1,252 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:microchip_pic12mcu
+LIBS:myLib
+EELAYER 25 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Aura Board"
+Date "2018-02-05"
+Rev "2.2"
+Comp "AuraUAS"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R?
+U 1 1 5A78BC65
+P 3850 1950
+F 0 "R?" V 3930 1950 50  0000 C CNN
+F 1 "1K" V 3850 1950 50  0000 C CNN
+F 2 "" V 3780 1950 50  0001 C CNN
+F 3 "" H 3850 1950 50  0001 C CNN
+	1    3850 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A78BE1B
+P 3350 5100
+F 0 "#PWR?" H 3350 4850 50  0001 C CNN
+F 1 "GND" H 3350 4950 50  0000 C CNN
+F 2 "" H 3350 5100 50  0001 C CNN
+F 3 "" H 3350 5100 50  0001 C CNN
+	1    3350 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PocketBeagle U?
+U 1 1 5A78C6AE
+P 2500 2400
+F 0 "U?" H 2250 1400 60  0000 C CNN
+F 1 "PocketBeagle" H 2650 2500 60  0000 C CNN
+F 2 "" H 2500 2400 60  0001 C CNN
+F 3 "" H 2500 2400 60  0001 C CNN
+	1    2500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CJMCU U?
+U 1 1 5A78D95A
+P 2800 4300
+F 0 "U?" H 2350 3500 60  0000 C CNN
+F 1 "CJMCU" H 2700 4400 60  0000 C CNN
+F 2 "" H 2800 4300 60  0001 C CNN
+F 3 "" H 2800 4300 60  0001 C CNN
+	1    2800 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L TSR2-2450 U?
+U 1 1 5A78E169
+P 2550 5950
+F 0 "U?" H 2450 5450 60  0000 C CNN
+F 1 "TSR2-2450" H 2700 6050 60  0000 C CNN
+F 2 "" H 2550 6050 60  0001 C CNN
+F 3 "" H 2550 6050 60  0001 C CNN
+	1    2550 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Teensy-3.2 U?
+U 1 1 5A78E1C6
+P 5600 2400
+F 0 "U?" H 5150 800 60  0000 C CNN
+F 1 "Teensy-3.2" H 5600 2500 60  0000 C CNN
+F 2 "" H 5450 2450 60  0001 C CNN
+F 3 "" H 5450 2450 60  0001 C CNN
+	1    5600 2400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3300 4800
+NoConn ~ 3300 4900
+Text Label 3450 4400 0    60   ~ 0
++3.3V
+Text Label 6450 2700 0    60   ~ 0
++3.3V
+Text Label 3450 4600 0    60   ~ 0
+I2C0_SCL
+Text Label 6450 3200 0    60   ~ 0
+I2C0_SCL
+Text Label 3450 4700 0    60   ~ 0
+I2C0_SDA
+Text Label 6450 3300 0    60   ~ 0
+I2C0_SDA
+Wire Wire Line
+	3300 4400 3450 4400
+Wire Wire Line
+	3300 4500 3350 4500
+Wire Wire Line
+	3350 4500 3350 5100
+Wire Wire Line
+	3300 4600 3450 4600
+Wire Wire Line
+	3300 4700 3450 4700
+Wire Wire Line
+	6300 2700 6450 2700
+Wire Wire Line
+	6300 3200 6450 3200
+Wire Wire Line
+	6300 3300 6450 3300
+Wire Wire Line
+	2000 2900 1950 2900
+Wire Wire Line
+	1950 2900 1950 3000
+Wire Wire Line
+	1950 3000 1950 3400
+Wire Wire Line
+	2000 3000 1950 3000
+Connection ~ 1950 3000
+Wire Wire Line
+	3300 2800 3350 2800
+Wire Wire Line
+	3350 2800 3350 3400
+$Comp
+L GND #PWR?
+U 1 1 5A78E81F
+P 3350 3400
+F 0 "#PWR?" H 3350 3150 50  0001 C CNN
+F 1 "GND" H 3350 3250 50  0000 C CNN
+F 2 "" H 3350 3400 50  0001 C CNN
+F 3 "" H 3350 3400 50  0001 C CNN
+	1    3350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A78E83E
+P 1950 3400
+F 0 "#PWR?" H 1950 3150 50  0001 C CNN
+F 1 "GND" H 1950 3250 50  0000 C CNN
+F 2 "" H 1950 3400 50  0001 C CNN
+F 3 "" H 1950 3400 50  0001 C CNN
+	1    1950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 6250 3350 6250
+Wire Wire Line
+	3200 6150 3250 6150
+Wire Wire Line
+	3250 6150 3250 6450
+Wire Wire Line
+	3200 6050 3350 6050
+Text Label 3350 6250 0    60   ~ 0
++5V
+Wire Wire Line
+	6300 2500 6450 2500
+Text Label 6450 2500 0    60   ~ 0
++5V
+Wire Wire Line
+	2000 2600 1850 2600
+Text Label 1850 2600 2    60   ~ 0
++5V
+Wire Wire Line
+	3300 2600 3450 2600
+Wire Wire Line
+	3300 2700 3450 2700
+Wire Wire Line
+	4900 2700 4750 2700
+Wire Wire Line
+	4900 2600 4750 2600
+Wire Wire Line
+	4900 2500 4850 2500
+Wire Wire Line
+	4850 2500 4850 4000
+$Comp
+L GND #PWR?
+U 1 1 5A78EC63
+P 4850 4000
+F 0 "#PWR?" H 4850 3750 50  0001 C CNN
+F 1 "GND" H 4850 3850 50  0000 C CNN
+F 2 "" H 4850 4000 50  0001 C CNN
+F 3 "" H 4850 4000 50  0001 C CNN
+	1    4850 4000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4900 2800
+NoConn ~ 4900 3600
+NoConn ~ 4900 3700
+NoConn ~ 4900 3800
+NoConn ~ 5400 4100
+NoConn ~ 5500 4100
+NoConn ~ 5600 4100
+NoConn ~ 5700 4100
+NoConn ~ 5800 4100
+NoConn ~ 6300 3800
+NoConn ~ 6300 2600
+Text Label 4750 2600 2    60   ~ 0
+UART1_RX
+Text Label 3450 2700 0    60   ~ 0
+UART1_RX
+Text Label 4750 2700 2    60   ~ 0
+UART1_TX
+Text Label 3450 2600 0    60   ~ 0
+UART1_TX
+$Comp
+L GND #PWR?
+U 1 1 5A78EF63
+P 3250 6450
+F 0 "#PWR?" H 3250 6200 50  0001 C CNN
+F 1 "GND" H 3250 6300 50  0000 C CNN
+F 2 "" H 3250 6450 50  0001 C CNN
+F 3 "" H 3250 6450 50  0001 C CNN
+	1    3250 6450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
