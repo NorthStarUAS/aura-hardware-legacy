@@ -103,17 +103,6 @@ F 3 "" H 2350 4100 60  0001 C CNN
 	1    2350 4000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Teensy-3.2 U3
-U 1 1 5A78E1C6
-P 5700 1550
-F 0 "U3" H 5250 -50 60  0000 C CNN
-F 1 "Teensy-3.2" H 5700 1650 60  0000 C CNN
-F 2 "Aura Footprints:Teensy-3.2" H 5550 1600 60  0001 C CNN
-F 3 "" H 5550 1600 60  0001 C CNN
-	1    5700 1550
-	1    0    0    -1  
-$EndComp
 NoConn ~ 8750 2050
 NoConn ~ 8750 2150
 Text Label 8900 1850 0    60   ~ 0
@@ -206,17 +195,6 @@ F 3 "" H 4950 3150 50  0001 C CNN
 	1    4950 3150
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5000 1950
-NoConn ~ 5000 2750
-NoConn ~ 5000 2850
-NoConn ~ 5000 2950
-NoConn ~ 5500 3250
-NoConn ~ 5600 3250
-NoConn ~ 5700 3250
-NoConn ~ 5800 3250
-NoConn ~ 5900 3250
-NoConn ~ 6400 2950
-NoConn ~ 6400 1750
 Text Label 4850 1750 2    60   ~ 0
 UART1_RX
 Text Label 3450 1850 0    60   ~ 0
@@ -940,4 +918,15 @@ Wire Wire Line
 	4400 3950 4400 4100
 Wire Wire Line
 	4400 4100 4450 4100
+$Comp
+L Teensy-3.2 U3
+U 1 1 5A7A3251
+P 5700 1550
+F 0 "U3" H 5250 -50 60  0000 C CNN
+F 1 "Teensy-3.2" H 5700 1650 60  0000 C CNN
+F 2 "Aura Footprints:Teensy-3.2" H 5550 1600 60  0001 C CNN
+F 3 "" H 5550 1600 60  0001 C CNN
+	1    5700 1550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
