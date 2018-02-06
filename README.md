@@ -20,9 +20,9 @@ by a more modern teensy-3.2 paired with an IMU/Pressure breakout
 board.  The teensy offers much more CPU power, more memory, better
 ADC's, and native 3.3v ttl logic levels.
 
-However, before this design was finished, and before I ever built a
-cape, the pocketbeagle became available.  This has prompted me to move
-to the next iteration.
+The system was breadboarded and the overall concept proved out.
+However, before this design was finished or built, the pocketbeagle
+became available.  This has prompted me to move to the next iteration.
 
 ## aura-board-expresspcb (v2.0 - 2.1)
 
