@@ -147,9 +147,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 2900 1950 2900
 Wire Wire Line
-	1950 2900 1950 3000
-Wire Wire Line
-	1950 3000 1950 3400
+	1950 2900 1950 3400
 Wire Wire Line
 	2000 3000 1950 3000
 Connection ~ 1950 3000
@@ -262,9 +260,7 @@ $EndComp
 Wire Wire Line
 	4800 5200 4850 5200
 Wire Wire Line
-	4850 5200 4850 5300
-Wire Wire Line
-	4850 5300 4850 5450
+	4850 5200 4850 5450
 Wire Wire Line
 	4800 5300 4850 5300
 Connection ~ 4850 5300
@@ -320,9 +316,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 5200 6050 5200
 Wire Wire Line
-	6050 5200 6050 5300
-Wire Wire Line
-	6050 5300 6050 5450
+	6050 5200 6050 5450
 Wire Wire Line
 	6000 5300 6050 5300
 Connection ~ 6050 5300
@@ -374,9 +368,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 6250 6050 6250
 Wire Wire Line
-	6050 6250 6050 6350
-Wire Wire Line
-	6050 6350 6050 6500
+	6050 6250 6050 6500
 Wire Wire Line
 	6000 6350 6050 6350
 Connection ~ 6050 6350
@@ -675,9 +667,7 @@ Wire Wire Line
 Text Label 3900 7150 2    60   ~ 0
 VIN
 Wire Wire Line
-	4300 6050 3750 6050
-Wire Wire Line
-	3750 6050 3200 6050
+	3200 6050 4300 6050
 $Comp
 L C C?
 U 1 1 5A79D18F
@@ -690,7 +680,7 @@ F 3 "" H 3750 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 6100 3750 6050
+	3750 5900 3750 6100
 Connection ~ 3750 6050
 $Comp
 L GND #PWR?
@@ -705,4 +695,6 @@ F 3 "" H 3750 6450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3750 6400 3750 6450
+Text Label 3750 5900 0    60   ~ 0
+VIN
 $EndSCHEMATC
