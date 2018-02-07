@@ -1,4 +1,4 @@
-(module TSR2-2450 (layer F.Cu) (tedit 5A7A19EA)
+(module TSR2-2450 (layer F.Cu) (tedit 5A7B76FE)
   (fp_text reference THT (at 0 0.5) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -9,7 +9,7 @@
   (fp_line (start -6.985 7.62) (end 6.985 7.62) (layer F.SilkS) (width 0.15))
   (fp_line (start 6.985 7.62) (end 6.985 0) (layer F.SilkS) (width 0.15))
   (fp_line (start 6.985 0) (end -6.985 0) (layer F.SilkS) (width 0.15))
-  (pad 2 thru_hole circle (at 0 3.81) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
-  (pad 3 thru_hole circle (at 2.54 3.81) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
-  (pad 1 thru_hole circle (at -2.54 3.81) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
+  (pad 1 thru_hole circle (at -2.54 3.81) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
+  (pad 2 thru_hole circle (at 0 3.81) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
+  (pad 3 thru_hole circle (at 2.54 3.81) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
 )
