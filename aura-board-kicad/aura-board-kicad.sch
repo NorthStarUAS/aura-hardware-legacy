@@ -382,7 +382,7 @@ Wire Wire Line
 Text Label 6450 3950 0    60   ~ 0
 PWM1
 Text Label 4850 2050 2    60   ~ 0
-PWM1
+PWM4
 Wire Wire Line
 	5000 2050 4850 2050
 Wire Wire Line
@@ -402,15 +402,15 @@ Wire Wire Line
 Text Label 6450 4050 0    60   ~ 0
 PWM2
 Text Label 4850 2150 2    60   ~ 0
-PWM2
-Text Label 4850 2250 2    60   ~ 0
 PWM3
+Text Label 4850 2250 2    60   ~ 0
+PWM2
 Text Label 6450 4250 0    60   ~ 0
 PWM4
 Text Label 6450 4150 0    60   ~ 0
 PWM3
 Text Label 4850 2350 2    60   ~ 0
-PWM4
+PWM1
 Text Label 6450 4350 0    60   ~ 0
 PWM5
 Text Label 6550 1950 0    60   ~ 0
