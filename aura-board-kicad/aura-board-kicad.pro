@@ -1,4 +1,4 @@
-update=Mon 05 Feb 2018 01:52:26 PM CST
+update=Wed 07 Feb 2018 07:46:44 AM CST
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,13 @@ LibName31=contrib
 LibName32=valves
 LibName33=microchip_pic12mcu
 LibName34=library/myLib
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
