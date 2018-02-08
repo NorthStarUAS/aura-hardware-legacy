@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source /home/curt/Projects/AuraUAS/aura-hardware/aura-board-kicad/aura-board-kicad.sch)
-    (date "Wed 07 Feb 2018 04:04:32 PM CST")
+    (source /home/curt/Source/AuraUAS/aura-hardware/aura-board-kicad/aura-board-kicad.sch)
+    (date "Thu 08 Feb 2018 10:01:36 AM CST")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -95,7 +95,7 @@
       (tstamp 5A79D18F))
     (comp (ref J1)
       (value "Main Power")
-      (footprint Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol)
+      (footprint Connectors_Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol)
       (libsource (lib conn) (part Screw_Terminal_01x02))
       (sheetpath (names /) (tstamps /))
       (tstamp 5A7930B4))

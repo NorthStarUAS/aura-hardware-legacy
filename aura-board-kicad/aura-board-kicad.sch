@@ -896,7 +896,7 @@ U 1 1 5A7930B4
 P 4650 4100
 F 0 "J1" H 4650 4200 50  0000 C CNN
 F 1 "Main Power" H 4650 3900 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 4650 4100 50  0001 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 4650 4100 50  0001 C CNN
 F 3 "" H 4650 4100 50  0001 C CNN
 	1    4650 4100
 	1    0    0    -1  

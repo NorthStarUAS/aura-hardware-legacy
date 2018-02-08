@@ -1,4 +1,4 @@
-update=Wed 07 Feb 2018 07:46:44 AM CST
+update=Thu 08 Feb 2018 10:07:31 AM CST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=/home/curt/Source/AuraUAS/aura-hardware/aura-board-kicad/library
@@ -73,3 +71,5 @@ NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
+[general]
+version=1
