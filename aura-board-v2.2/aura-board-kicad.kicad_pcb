@@ -19,7 +19,7 @@
 
   (layers
     (0 F.Cu signal)
-    (31 B.Cu signal)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -41,7 +41,7 @@
   )
 
   (setup
-    (last_trace_width 0.254)
+    (last_trace_width 0.1524)
     (user_trace_width 0.254)
     (user_trace_width 0.381)
     (user_trace_width 0.508)
@@ -756,7 +756,7 @@
     )
   )
 
-  (module Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm (layer F.Cu) (tedit 5A7BB404) (tstamp 5A7B2CC1)
+  (module Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm (layer F.Cu) (tedit 5A7C7D20) (tstamp 5A7B2CC1)
     (at 96.52 95.25)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -764,7 +764,7 @@
     (fp_text reference J4 (at -1.905 5.08 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Attopilot (at 0 -2.54) (layer F.SilkS)
+    (fp_text value Atto (at 0 -2.54) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.635 -1.27) (end 1.27 -1.27) (layer F.Fab) (width 0.1))
@@ -1165,11 +1165,11 @@
       (net 33 "Net-(U4-Pad6)"))
   )
 
-  (module Connectors_Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol (layer F.Cu) (tedit 0) (tstamp 5A7C74D1)
+  (module Connectors_Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol (layer F.Cu) (tedit 5A7C7D47) (tstamp 5A7C74D1)
     (at 99.695 79.375 90)
     (descr "2-way 3.5mm pitch terminal block, Phoenix PT series")
     (path /5A7930B4)
-    (fp_text reference J1 (at 1.75 -4.3 90) (layer F.SilkS)
+    (fp_text reference J1 (at 6.35 0 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value "Main Power" (at 1.75 6 90) (layer F.Fab)
@@ -1230,8 +1230,8 @@
   (gr_line (start 29.21 102.87) (end 104.775 102.87) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 27.94 49.53) (end 27.94 102.87) (angle 90) (layer Edge.Cuts) (width 0.15))
 
-  (segment (start 95.25 73.025) (end 97.155 74.93) (width 0.254) (layer F.Cu) (net 1) (status 400000))
-  (segment (start 98.425 79.375) (end 99.695 79.375) (width 0.1524) (layer F.Cu) (net 1) (tstamp 5A7C7512) (status 800000))
+  (segment (start 95.25 73.025) (end 97.155 74.93) (width 0.254) (layer F.Cu) (net 1))
+  (segment (start 98.425 79.375) (end 99.695 79.375) (width 0.1524) (layer F.Cu) (net 1) (tstamp 5A7C7512))
   (segment (start 97.155 78.105) (end 98.425 79.375) (width 0.254) (layer F.Cu) (net 1) (tstamp 5A7C7510))
   (segment (start 97.155 74.93) (end 97.155 78.105) (width 0.254) (layer F.Cu) (net 1) (tstamp 5A7C750F))
   (segment (start 99.695 80.01) (end 99.06 80.01) (width 0.635) (layer F.Cu) (net 1))
