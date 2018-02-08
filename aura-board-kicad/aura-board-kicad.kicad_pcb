@@ -5,7 +5,7 @@
     (no_connects 0)
     (area 27.702599 48.0946 105.012401 104.3574)
     (thickness 1.6)
-    (drawings 14)
+    (drawings 15)
     (tracks 113)
     (zones 0)
     (modules 21)
@@ -19,7 +19,7 @@
 
   (layers
     (0 F.Cu signal)
-    (31 B.Cu signal)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -1199,6 +1199,9 @@
       (net 33 "Net-(U4-Pad6)"))
   )
 
+  (gr_text "AuraUAS 2.2\nCopyright (C) Curtis L. Olson\ncurtolson@flightgear.org" (at 78.105 89.535) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_text + (at 100.33 95.885) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.25)))
   )
