@@ -33,7 +33,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:microchip_pic12mcu
 LIBS:myLib
-LIBS:aura-board-kicad-cache
 EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
@@ -253,11 +252,11 @@ Wire Wire Line
 	8800 5500 8950 5500
 NoConn ~ 8800 5600
 Text Label 8950 5400 0    60   ~ 0
-UART2_RX
+UART2_TX
 Text Label 1850 1850 2    60   ~ 0
 UART2_RX
 Text Label 8950 5500 0    60   ~ 0
-UART2_TX
+UART2_RX
 Text Label 1850 1950 2    60   ~ 0
 UART2_TX
 $Comp
@@ -295,9 +294,9 @@ F 3 "" H 6350 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 6450 5400 0    60   ~ 0
-UART0_RX
-Text Label 6450 5500 0    60   ~ 0
 UART0_TX
+Text Label 6450 5500 0    60   ~ 0
+UART0_RX
 Wire Wire Line
 	2000 2250 1850 2250
 Wire Wire Line
@@ -330,7 +329,7 @@ Wire Wire Line
 Connection ~ 7650 5800
 NoConn ~ 7600 5600
 Text Label 7750 5400 0    60   ~ 0
-GPS_RX
+GPS_TX
 Text Label 4850 2450 2    60   ~ 0
 GPS_RX
 Wire Wire Line
@@ -338,7 +337,7 @@ Wire Wire Line
 Wire Wire Line
 	5000 2550 4850 2550
 Text Label 7750 5500 0    60   ~ 0
-GPS_TX
+GPS_RX
 Text Label 4850 2550 2    60   ~ 0
 GPS_TX
 $Comp
@@ -455,7 +454,7 @@ L Conn_01x03 J4
 U 1 1 5A7927A4
 P 6900 3950
 F 0 "J4" H 6900 4150 50  0000 C CNN
-F 1 "Attopilot" H 6900 3750 50  0000 C CNN
+F 1 "Atto" H 6900 3750 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 6900 3950 50  0001 C CNN
 F 3 "" H 6900 3950 50  0001 C CNN
 	1    6900 3950
@@ -599,7 +598,7 @@ L C C1
 U 1 1 5A79D18F
 P 3550 4300
 F 0 "C1" H 3575 4400 50  0000 L CNN
-F 1 "22uf 63V" H 3575 4200 50  0000 L CNN
+F 1 "22uf63V" H 3575 4200 50  0000 L CNN
 F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 3588 4150 50  0001 C CNN
 F 3 "" H 3550 4300 50  0001 C CNN
 	1    3550 4300
@@ -921,7 +920,7 @@ L PWM_3x08 J2
 U 1 1 5A7B6479
 P 5750 3950
 F 0 "J2" H 5750 4350 50  0000 C CNN
-F 1 "PWM_3x08" H 5750 3250 50  0000 C CNN
+F 1 "PWM_8" H 5750 3250 50  0000 C CNN
 F 2 "footprint:PWM_3x08" H 5750 3950 50  0001 C CNN
 F 3 "" H 5750 3950 50  0001 C CNN
 	1    5750 3950
