@@ -1,18 +1,23 @@
-# aura-hardware
+# AuraUAS Autopilot Hardware
 
 This is a repository of hardware designs that have evolved out of the
-AuraUAS project.  These designs serve the AuraUAS ecosystem -- a
-completely independent small UAV autopilot system.
+AuraUAS project.  These designs serve the AuraUAS ecosystem.
 
-## bb-apm2-cape (v1.0 - v1.4)
+## Version 1.0 - 1.4 (May 2015 - August 2016)
 
-This is the functional board design.  I have built up at least 4
-functional autopilots from this design.  However, it leverages the old
-APM2 (atmega2560-based) board as the sensor head.  This is functionaly
-excellent, but produces a stack of 3 boards.  Also the APM2 is a very
-old design now and only available through clone outlets.
+Beaglebone Black + Custom Cape + APM2
 
-## bb-teensy-cape (v1.5)
+This is the first functional autopilot board design I created myself.
+I have built up at least 4 flying autopilots from this design.
+However, it leverages the old APM2 (atmega2560-based) board as the
+sensor head.  This results actually are quite good, but it leads to a
+stack of 3 boards and a fairly inefficient layout.  Also the APM2 is a
+very old design now, has some limitations, and only available through
+clone outlets.
+
+## Version 1.5 (January 2017)
+
+Beaglebone Black + Custom Cape + Teensy-3.2
 
 Although not listed as v1.5 in the file names, this is the logical
 successor to the APM2-based board.  The APM2 is dropped and replaced
@@ -24,32 +29,56 @@ The system was breadboarded and the overall concept proved out.
 However, before this design was finished or built, the pocketbeagle
 became available.  This has prompted me to move to the next iteration.
 
-## aura-board-expresspcb (v2.0 - 2.1)
+## Version 2.0 - 2.1 (January 2018)
+
+Pocketbeagle + Teensy-3.2 + Custom Board (designed with Express PCB)
 
 This is a single board that combines a pocketbeagle + teensy + imu
 breakout + voltage regulator + connectors in a single board package
 that has only slightly larger footprint compared to the original
 beaglebone.
 
-I ordered 3x of the v2.0 board and will built up one to full flight
+I ordered a test run of the v2.0 board and built up one to full flight
 status.
 
 This board was designed with the Express PCB software which also
 requires ordering your boards from Express PCB.  The trade off is ease
 of design versus flexibility and cost.
 
-## aura-board-kicad (v2.2+)
+## Version 2.2 (February 2018)
 
-The next evolution in the process is to redesign the board in kicad.
-The main benefit is the ability to order the design from a multitude
-of board houses, and possibly even do a pick and place shop at some
-point in the future.  This gives the most flexibility and less
-expensive board runs.
+Pocketbeagle + Teensy-3.2 + Custom Board (kicad + Oshpark)
 
-The next revision of the board design will shrink the footprint,
-switch to screw terminals for main power input, switch to a slimmer
-+5V voltage regulator, and will address a few minor issues discovered
-in the v2.0/2.1 design.
+The next evolution of the board is a redesign in kicad.  The main
+benefit is the ability to order the design from a multitude of board
+houses, and possibly even do a pick and place shop at some point in
+the future.  This gives the most flexibility and less expensive board
+runs.
+
+Oshpark is a great inexpensive option.  They can suck in my kicad pcb
+file directly, and they are open-source and community-sharing
+friendly.
+
+Major updates:
+- Switch to the awesome kicad PCB design tool.
+- Rearrange and move some parts to shrink the board footprint and
+  simplify trace routing.
+- Cleans up a few small goof ups in the v2.0 design.
+- Switch to the TSR2-2450 power supply (functionally similar but
+  slimmer and cleaner looking.)
+- Add a voltage divider/sensor circuit for main input battery voltage
+  (to complement the regulated voltage sensor.)
+- Switch to a robust screw terminal connector for main power.
+
+
+## Version 2.3 (Date: in development)
+
+Pocketbeagle + Teensy-3.2 + Custom Board (kicad + Oshpark)
+
+Major updates:
+- Experiment with kicad's autorouting feature.
+- Some component placement tweaks based on the build up of the v2.2
+  board (pending.)
 
 ## Overview
 
@@ -75,7 +104,7 @@ choices, development, and tuning of this system.
 The following information needs to be reviewed and updated, but is
 still mostly reliable.
 
-Primary design goals:
+## Primary design goals
 
 - Maximize use of existing mature, inexpensive, and widely available
   sub-components.
@@ -86,42 +115,47 @@ Primary design goals:
 - High performance, high reliability, production quality flight
   results.
 
-Features:
+## Features
 
-  - Beaglebone/Linux based flight control system (big processor).
-  - Teensy/arduino based sensor interface (little processor.)
-  - SBUS RC Inputs (SBUS receiver required)
-  - 8 PWM Outputs (PWM servos required)
-  - MPU-9250 IMU, BMP[12]80 pressure sensor.
-  - 5v 2A power regulator on board.
-  - Attopilot (volt/amp) sensor interface for main battery.
-  - Avionics/main voltage sensing on board.
-  - Beaglebone console UART exposed.
-  - Supports industry standard (mRo) external devices: ublox 8 gps,
-    900mhz radio modem, i2c based airspeed sensor.
+- Beaglebone/Linux based flight control system (big processor).
+- Teensy/arduino based sensor interface (little processor.)
+- SBUS RC Inputs (SBUS receiver required)
+- 8 PWM Outputs (PWM servos required)
+- MPU-9250 IMU, BMP[12]80 pressure sensor.
+- 5v 2A power regulator on board.
+- Attopilot (volt/amp) sensor interface for main battery.
+- Avionics/main voltage sensing on board.
+- Pocketbeagle console UART exposed.
+- Supports industry standard (mRo) external devices: ublox 8 gps,
+  900mhz radio modem, i2c based airspeed sensor.
+- Mature firmware, autopilot flight code, and ground station interface.
 
+## Power
 
-Power:
-
-- Provides clean stable 5v power for all the avionics (beaglebone,
-  teensy, gps, telemetry, RC receiver, etc.)
+- Input power can be anything that ranges from 6.5-36 volts.
+- The board includes a 5V 2A regulator to provide clean stable power
+  for all the avionics (pocketbeagle, teensy, gps, telemetry, RC
+  receiver, etc.)
 - Servos are powered from some external source arranged by the
-  integrator (for example from the ESC/throttle connector.)
+  integrator (for example from the ESC via the throttle channel.)
 
-Communication:
+## Communication
 
 - Supports a variety of 5v (3.3v TTL) radio modems such as Freescale,
   mRo, and Digi Xtend.
+- Exposes the mini-usb port on both the Teensy and the Pocketbeagle
+  for updating firmware or debugging.
 - Exposes the beaglebone UART0 (console) for additional communication
   and/or debugging the beaglebone.
 
-Cost:
+## Cost
 
-- This board is not available for sale as an assembled unit.  However,
-  you are welcome to download the design, have it made, and populate
-  the board yourself with only minimal soldering skills.  In
-  quantities of 3, I estimate it will cost about $100/ea to fabricate
-  and assemble a full board.  (This doesn't include the external parts
-  such as gps, radio modem, attopilot volt/amp sensor, RC system,
-  etc.)
+This board is not available for sale as an assembled unit.  However,
+you are welcome to download the design, have it made, and populate the
+board yourself with only minimal soldering skills.  In quantities of
+3, I estimate it will cost about $100/ea to assemble a full board.
+
+The external components such as gps, radio modem, receiver, attopilot
+volt/current sensor, etc. need to be purchased separately.  These are
+things that are required for any autopilot system.
 
