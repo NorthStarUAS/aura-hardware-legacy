@@ -12,7 +12,7 @@ I have built up at least 4 flying autopilots from this design.
 However, it leverages the old APM2 (atmega2560-based) board as the
 sensor head.  This results actually are quite good, but it leads to a
 stack of 3 boards and a fairly inefficient layout.  Also the APM2 is a
-very old design now, has some limitations, and only available through
+very old design now, has some limitations, and is only available through
 clone outlets.
 
 ## Version 1.5 (January 2017)
@@ -47,20 +47,20 @@ of design versus flexibility and cost.
 
 ## Version 2.2 (February 2018)
 
-Pocketbeagle + Teensy-3.2 + Custom Board (kicad + Oshpark)
+Pocketbeagle + Teensy-3.2 + Custom Board (KiCad + Oshpark)
 
-The next evolution of the board is a redesign in kicad.  The main
+The next evolution of the board is a redesign in KiCad.  The main
 benefit is the ability to order the design from a multitude of board
 houses, and possibly even do a pick and place shop at some point in
 the future.  This gives the most flexibility and less expensive board
 runs.
 
-Oshpark is a great inexpensive option.  They can suck in my kicad pcb
+Oshpark is a great inexpensive option.  They can suck in my KiCad pcb
 file directly, and they are open-source and community-sharing
 friendly.
 
 Major updates:
-- Switch to the awesome kicad PCB design tool.
+- Switch to the awesome KiCad PCB design tool.
 - Rearrange and move some parts to shrink the board footprint and
   simplify trace routing.
 - Cleans up a few small goof ups in the v2.0 design.
@@ -73,10 +73,10 @@ Major updates:
 
 ## Version 2.3 (Date: in development)
 
-Pocketbeagle + Teensy-3.2 + Custom Board (kicad + Oshpark)
+Pocketbeagle + Teensy-3.2 + Custom Board (KiCad + Oshpark)
 
 Major updates:
-- Experiment with kicad's autorouting feature.
+- Experiment with KiCad's autorouting feature.
 - Some component placement tweaks based on the build up of the v2.2
   board (pending.)
 
