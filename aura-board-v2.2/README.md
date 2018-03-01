@@ -4,7 +4,9 @@
 
 I recommend you print out these instructions on paper and actually
 check off each step as it is completed.  Some steps cannot be
-completed out of order!
+completed out of order!  If you work carefully and don't need to
+resolve any major goofups, I think most people can do this assembly in
+2-3 evenings.
 
 ### Tools required
 
@@ -29,8 +31,11 @@ completed out of order!
   Using the schematic and board layout, test all the 5v points to make
   sure power is getting to the correct locations.
 - [ ] Install the 22uf63v capacitor being careful to note polarity.
-- [ ] Install the 3 x 1k ohm resistors. 
-- [ ] Install the 10k ohm resistor.  Polarity does not matter with resistors.
+- [ ] Install the 3 x 1k ohm resistors. You might find a needle nose
+  pliers helpful to gently pull on the wires from the back side and
+  help the resister fully seat in place.
+- [ ] Install the 10k ohm resistor.  Polarity does not matter with
+  resistors.  Clip off the excess wire.
 - [ ] Go ahead and power up the board again.  Test that pin-hole A0 on
   the teensy footprint reads about 1/11 of your input voltage.  Test
   that pin-hole A1 reads about 2.5 volts.
@@ -109,3 +114,44 @@ completed out of order!
   boot up the pocketbeagle, connect to a laptop via the usb port, log
   in like it's any other beaglebone in the world, and you should be do
   all sorts of linux stuff.
+
+### Install the RC Connectors
+
+- [ ] Clip off 3 strings of 8 x 0.1" headers to complete the PWM
+  output block.  Solder these on from the back.  A servo connector
+  plugged into one or both ends can really help keep their alignment
+  right on while you solder them in.
+- [ ] Clip off 2 strings of 3 x 0.1" headers for the SBUS input
+  connector and the Attopiot connector.  Solder these in.  I often try
+  to block up the connetor is it is positioned correctly.  Then I
+  solder one pin and check for position and alignment.  If anything is
+  off I can reheat that one pin and fix it.  Then once everything is
+  double checked good and lined up and in the right place, I finish
+  soldering the remainder of the pins.
+
+### Install the Picoblade (or DF-13) connectors.
+
+Integrator's choice of connectors here.  Sorry that JST-GH doesn't
+have a through-hole variant so we are stuck with one of these other
+connectors.  mRobotics should have JST-GH -> Picoblade and JSG-GH ->
+DF-13 cables available, so pick your favorite and go with it.
+
+These connectors have 1.25mm spacing so they are a bit trickier than
+the 0.1" inch connectors.  Just be super careful, use a small bit of
+solder, and remember heat and surface tension should make the solder
+go where it needs to go and no further.  Be careful not to slather in
+too much solder and bridge two adjacent pins!
+
+Again, I recommend doing your best to block up and align the
+connector, then solder just one pin.  Carefully check position and
+alignment.  It's easy to reheat that one pin and make adjustments.
+When you are happy, solder the remaining pins.
+
+- [ ] Install the 6-position telemetry and gps connectors.  (Note the
+  board can support soldering a 5-position connector.  You can review
+  the schematic and board layout to figure out the proper position.)
+- [ ] Install the 4-position i2c connector.  Again, mRobotics is your
+  cable adapter friend.
+- [ ] Optionally install the 6-position BBCON connector.  This gives
+  you access to the Pocketbeagle console for debugging or possibly
+  another uart for some future use.
