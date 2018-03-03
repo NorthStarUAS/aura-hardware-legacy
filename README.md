@@ -3,6 +3,8 @@
 This is a repository of hardware designs that have evolved out of the
 AuraUAS project.  These designs serve the AuraUAS ecosystem.
 
+![map](images/board-v2.2.jpg "Version 2.2 Build")
+
 ## Version 1.0 - 1.4 (May 2015 - August 2016)
 
 Beaglebone Black + Custom Cape + APM2
