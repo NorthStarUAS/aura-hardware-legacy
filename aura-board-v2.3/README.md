@@ -5,7 +5,7 @@
 I recommend you print out these instructions on paper and actually
 check off each step as it is completed.  Some steps cannot be
 completed out of order!  If you work carefully and don't need to
-resolve any major goofups, I think most people can do this assembly in
+resolve any major goof ups, I think most people can do this assembly in
 2-3 evenings.
 
 ### Tools required
@@ -27,7 +27,7 @@ resolve any major goofups, I think most people can do this assembly in
   TSR2-2450 has a white dot next to it.  This corresponds with the
   hole nearest the edge of the board.
 - [ ] You can go ahead and power up the board at this point (I
-  recommend using < 20 volt supply untile the capacitor is installed.)
+  recommend using < 20 volt supply until the capacitor is installed.)
   Using the schematic and board layout, test all the 5v points to make
   sure power is getting to the correct locations.
 - [ ] Install the 22uf63v capacitor being careful to note polarity.
@@ -35,7 +35,7 @@ resolve any major goofups, I think most people can do this assembly in
   pliers helpful to gently pull on the wires from the back side and
   help the resister fully seat in place.
 - [ ] Install the 10k ohm resistor.  Polarity does not matter with
-  resistors.  Clip off the excess wire.
+  resistors.  Clip off the excess wire from the back of the board.
 - [ ] Go ahead and power up the board again.  Test that pin-hole A0 on
   the teensy footprint reads about 1/11 of your input voltage.  Test
   that pin-hole A1 reads about 2.5 volts.
@@ -45,11 +45,11 @@ resolve any major goofups, I think most people can do this assembly in
 - [ ] Carefully scratch between the two pads on the reverse side of
   the board to disable USB power to the teensy.  This is important
   because the teensy-3.2 is not tolerant of being powered by both usb
-  and onboard power simultaneiously.
+  and onboard power simultaneously.
   - If you forget this step before installing the teensy, there is no
     way to fix it!  But there is a work around ...
   - The recommendation is to rig up a standard USB cable with
-    the red powerline snipped and still safely upload firmware to your
+    the red power line snipped and still safely upload firmware to your
     teensy while it is powered by the board regulator.
   - It is just annoying because you have to remember to use the
     correct usb cable or you may significantly shorten the life of your
@@ -110,7 +110,7 @@ resolve any major goofups, I think most people can do this assembly in
   clip off the excess pin length.
 - [ ] Go ahead and power the board up again.  The pocketbeagle has a
   blue led that should light up.
-- [ ] If you have an SD card prepaired, you can insert it and fully
+- [ ] If you have an SD card prepared, you can insert it and fully
   boot up the pocketbeagle, connect to a laptop via the usb port, log
   in like it's any other beaglebone in the world, and you should be do
   all sorts of linux stuff.
@@ -122,8 +122,8 @@ resolve any major goofups, I think most people can do this assembly in
   plugged into one or both ends can really help keep their alignment
   right on while you solder them in.
 - [ ] Clip off 2 strings of 3 x 0.1" headers for the SBUS input
-  connector and the Attopiot connector.  Solder these in.  I often try
-  to block up the connetor is it is positioned correctly.  Then I
+  connector and the Attopilot connector.  Solder these in.  I often try
+  to block up the connector is it is positioned correctly.  Then I
   solder one pin and check for position and alignment.  If anything is
   off I can reheat that one pin and fix it.  Then once everything is
   double checked good and lined up and in the right place, I finish
