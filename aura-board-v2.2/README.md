@@ -22,7 +22,7 @@ resolve any major goof ups, I think most people can do this assembly in
 
 ### Errata
 
-Dumb mistakes happen some times ...
+These issues are resolved in the next version of the board.
 
 - [ ] The external GPS connector has it's TX and RX lines reversed
   from the drone-code standard.  The fix is annoying but easy:
