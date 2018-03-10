@@ -25,11 +25,11 @@ resolve any major goof ups, I think most people can do this assembly in
 Dumb mistakes happen some times ...
 
 - [ ] The external GPS connector has it's TX and RX lines reversed
-  from the drone-code standard.  The fix is annoying but easy: just
-  carefully remove the two pins from one end of your connector and
-  reverse them.  I use the fine point of an xacto knife blade under a
-  magnifying glass to gently pry back the plastic clip and then gently
-  tug the wire out.
+  from the drone-code standard.  The fix is annoying but easy:
+  carefully remove the two (RX & TX) pins from one end of your cable
+  and reverse them.  I use the fine point of an xacto knife blade
+  under a magnifying glass to gently pry back the plastic clip and
+  then gently tug the wire out.
 - [ ] The external Telemetry connector also has this same TX/RX
   reversed issue.  the fix is also identical.
 
