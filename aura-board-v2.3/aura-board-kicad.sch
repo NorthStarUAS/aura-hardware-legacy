@@ -33,7 +33,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:microchip_pic12mcu
 LIBS:myLib
-LIBS:aura-board-kicad-cache
 EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
@@ -253,13 +252,13 @@ Wire Wire Line
 	8800 5500 8950 5500
 NoConn ~ 8800 5600
 Text Label 8950 5400 0    60   ~ 0
-UART2_TX
+MODEM_TX
 Text Label 1850 1850 2    60   ~ 0
-UART2_RX
+MODEM_TX
 Text Label 8950 5500 0    60   ~ 0
-UART2_RX
+MODEM_RX
 Text Label 1850 1950 2    60   ~ 0
-UART2_TX
+MODEM_RX
 $Comp
 L Conn_01x06 J3
 U 1 1 5A78FF6B
@@ -332,7 +331,7 @@ NoConn ~ 7600 5600
 Text Label 7750 5400 0    60   ~ 0
 GPS_TX
 Text Label 4850 2450 2    60   ~ 0
-GPS_RX
+GPS_TX
 Wire Wire Line
 	5000 2450 4850 2450
 Wire Wire Line
@@ -340,7 +339,7 @@ Wire Wire Line
 Text Label 7750 5500 0    60   ~ 0
 GPS_RX
 Text Label 4850 2550 2    60   ~ 0
-GPS_TX
+GPS_RX
 $Comp
 L GND #PWR08
 U 1 1 5A790B41
