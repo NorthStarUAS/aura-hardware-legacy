@@ -20,6 +20,19 @@ resolve any major goof ups, I think most people can do this assembly in
   that allows me to vary the voltage and shows me the current draw,
   but a battery or simple wall wart could work fine too.
 
+### Errata
+
+Dumb mistakes happen some times ...
+
+- [ ] The external GPS connector has it's TX and RX lines reversed
+  from the drone-code standard.  The fix is annoying but easy: just
+  carefully remove the two pins from one end of your connector and
+  reverse them.  I use the fine point of an xacto knife blade under a
+  magnifying glass to gently pry back the plastic clip and then gently
+  tug the wire out.
+- [ ] The external Telemetry connector also has this same TX/RX
+  reversed issue.  the fix is also identical.
+
 ### Install Power Subsystem
 
 - [ ] Install 3.5mm screw terminal block.
