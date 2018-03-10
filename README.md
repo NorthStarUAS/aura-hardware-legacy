@@ -73,14 +73,22 @@ Major updates:
 - Switch to a robust screw terminal connector for main power.
 
 
-## Version 2.3 (Date: in development)
+## Version 2.3 (March 10, 2018)
 
 Pocketbeagle + Teensy-3.2 + Custom Board (KiCad + Oshpark)
 
 Major updates:
-- Experiment with KiCad's autorouting feature.
-- Some component placement tweaks based on the build up of the v2.2
-  board (pending.)
+- Reverse TX/RX on GPS and Telemetry ports to match drone code
+  standard (big dohhh!!! while assembling the first v2.2 board)
+- Slide screw terminal slightly towards board edge to give more space
+  to the resistors.
+- Mark pin #1 on TSR2-2450 connector clearly to help avoid assembly mistakes.
+- Relocate capacitor away from corner mounting hole.
+- Draw bigger usb port outlines on teensy/pocketbeagle to match reality.
+- Space sbus and atto connectors exactly 0.2" from ends of PWM block.-
+  Experiment with KiCad's autorouting feature.
+- Many small component placement and trace routing adjustments for better
+  fit and aethsetics.
 
 ## Overview
 
