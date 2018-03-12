@@ -164,9 +164,11 @@ still mostly reliable.
 ## Cost
 
 This board is not available for sale as an assembled unit.  However,
-you are welcome to download the design, have it made, and populate the
-board yourself with only minimal soldering skills.  In quantities of
-3, I estimate it will cost about $100/ea to assemble a full board.
+you are welcome to download the design and order it through Oshpark
+(or any other board service.)  You can purchase all the components and
+populate the board yourself with only minimal soldering skills.  I
+estimate it will cost about $100/ea to assemble a full board.  Most
+items can be purchased with free shipping.
 
 The external components such as gps, radio modem, receiver, attopilot
 volt/current sensor, etc. need to be purchased separately.  These are
